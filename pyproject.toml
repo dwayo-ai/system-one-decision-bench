@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jev-bench"
+version = "0.1.0"
+description = "Open benchmark and confidence-cascade reference for System One (Jev) decision models vs chat LLMs"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.27", "pyyaml>=6", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+chat = ["anthropic>=0.40", "openai>=1.50"]
+data = ["datasets>=3"]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.11", "types-PyYAML"]
+
+[project.scripts]
+jev-bench = "jev_bench.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jev_bench"]
+
+[tool.ruff]
+line-length = 120
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]  # long prose strings in the report; `ruff format` handles code
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+disallow_untyped_defs = false
+disallow_untyped_calls = false
+check_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = ["datasets.*", "anthropic.*", "openai.*", "huggingface_hub.*", "matplotlib.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,441 @@
+[
+ {
+  "task": "banking77-10",
+  "backend": "chat-small",
+  "model_id": "claude-haiku-5-5",
+  "resolved_model_ids": [
+   "claude-haiku-5-5"
+  ],
+  "mock": false,
+  "synthetic": false,
+  "n": 400,
+  "accuracy": 0.9575,
+  "accuracy_ci95": [
+   0.9375,
+   0.975
+  ],
+  "macro_f1": 0.9555056791407355,
+  "latency_ms": {
+   "p50": 1034.5305623486638,
+   "p95": 1712.8315683454275,
+   "p99": 2301.523354039527
+  },
+  "cost_per_1000_usd": 0.035097750000000004,
+  "invalid_rate": 0.0,
+  "error_rate": 0.0,
+  "retried_calls": 0,
+  "workers": 4,
+  "ece": 0.05330000000000002,
+  "reliability": [
+   {
+    "lo": 0.4,
+    "hi": 0.5,
+    "n": 2,
+    "mean_confidence": 0.45,
+    "accuracy": 0.5
+   },
+   {
+    "lo": 0.5,
+    "hi": 0.6,
+    "n": 3,
+    "mean_confidence": 0.5,
+    "accuracy": 1.0
+   },
+   {
+    "lo": 0.6,
+    "hi": 0.7,
+    "n": 12,
+    "mean_confidence": 0.6016666666666667,
+    "accuracy": 0.75
+   },
+   {
+    "lo": 0.7,
+    "hi": 0.8,
+    "n": 4,
+    "mean_confidence": 0.7,
+    "accuracy": 0.5
+   },
+   {
+    "lo": 0.8,
+    "hi": 0.9,
+    "n": 63,
+    "mean_confidence": 0.8233333333333333,
+    "accuracy": 0.8412698412698413
+   },
+   {
+    "lo": 0.9,
+    "hi": 1.0,
+    "n": 316,
+    "mean_confidence": 0.9461708860759493,
+    "accuracy": 0.9968354430379747
+   }
+  ]
+ },
+ {
+  "task": "banking77-10",
+  "backend": "jev",
+  "model_id": "jev-1.13.0",
+  "resolved_model_ids": [
+   "jev-1.13.0"
+  ],
+  "mock": false,
+  "synthetic": false,
+  "n": 400,
+  "accuracy": 0.955,
+  "accuracy_ci95": [
+   0.935,
+   0.9725
+  ],
+  "macro_f1": 0.953969964736338,
+  "latency_ms": {
+   "p50": 366.8857291340828,
+   "p95": 485.4607661953196,
+   "p99": 560.0880429334936
+  },
+  "cost_per_1000_usd": 0.015984885,
+  "invalid_rate": 0.0,
+  "error_rate": 0.0,
+  "retried_calls": 0,
+  "workers": 4,
+  "ece": 0.03329999999999996,
+  "reliability": [
+   {
+    "lo": 0.4,
+    "hi": 0.5,
+    "n": 1,
+    "mean_confidence": 0.41,
+    "accuracy": 1.0
+   },
+   {
+    "lo": 0.5,
+    "hi": 0.6,
+    "n": 4,
+    "mean_confidence": 0.5475,
+    "accuracy": 0.5
+   },
+   {
+    "lo": 0.6,
+    "hi": 0.7,
+    "n": 1,
+    "mean_confidence": 0.64,
+    "accuracy": 0.0
+   },
+   {
+    "lo": 0.7,
+    "hi": 0.8,
+    "n": 4,
+    "mean_confidence": 0.7525,
+    "accuracy": 0.5
+   },
+   {
+    "lo": 0.8,
+    "hi": 0.9,
+    "n": 6,
+    "mean_confidence": 0.8566666666666666,
+    "accuracy": 0.8333333333333334
+   },
+   {
+    "lo": 0.9,
+    "hi": 1.0,
+    "n": 384,
+    "mean_confidence": 0.9967447916666666,
+    "accuracy": 0.96875
+   }
+  ]
+ },
+ {
+  "task": "banking77",
+  "backend": "chat-small",
+  "model_id": "claude-haiku-5-5",
+  "resolved_model_ids": [
+   "claude-haiku-5-5"
+  ],
+  "mock": false,
+  "synthetic": false,
+  "n": 500,
+  "accuracy": 0.75,
+  "accuracy_ci95": [
+   0.712,
+   0.786
+  ],
+  "macro_f1": 0.7253694539672534,
+  "latency_ms": {
+   "p50": 1057.122687343508,
+   "p95": 1633.9640977559613,
+   "p99": 2008.0668812850486
+  },
+  "cost_per_1000_usd": 0.10734600000000002,
+  "invalid_rate": 0.0,
+  "error_rate": 0.0,
+  "retried_calls": 0,
+  "workers": 4,
+  "ece": 0.08036000000000001,
+  "reliability": [
+   {
+    "lo": 0.1,
+    "hi": 0.2,
+    "n": 1,
+    "mean_confidence": 0.15,
+    "accuracy": 0.0
+   },
+   {
+    "lo": 0.3,
+    "hi": 0.4,
+    "n": 10,
+    "mean_confidence": 0.30999999999999994,
+    "accuracy": 0.1
+   },
+   {
+    "lo": 0.4,
+    "hi": 0.5,
+    "n": 5,
+    "mean_confidence": 0.44000000000000006,
+    "accuracy": 0.2
+   },
+   {
+    "lo": 0.5,
+    "hi": 0.6,
+    "n": 27,
+    "mean_confidence": 0.5074074074074074,
+    "accuracy": 0.25925925925925924
+   },
+   {
+    "lo": 0.6,
+    "hi": 0.7,
+    "n": 64,
+    "mean_confidence": 0.6003125,
+    "accuracy": 0.4375
+   },
+   {
+    "lo": 0.7,
+    "hi": 0.8,
+    "n": 7,
+    "mean_confidence": 0.7,
+    "accuracy": 0.8571428571428571
+   },
+   {
+    "lo": 0.8,
+    "hi": 0.9,
+    "n": 145,
+    "mean_confidence": 0.8223448275862069,
+    "accuracy": 0.7172413793103448
+   },
+   {
+    "lo": 0.9,
+    "hi": 1.0,
+    "n": 241,
+    "mean_confidence": 0.9324896265560165,
+    "accuracy": 0.946058091286307
+   }
+  ]
+ },
+ {
+  "task": "banking77",
+  "backend": "jev",
+  "model_id": "jev-1.13.0",
+  "resolved_model_ids": [
+   "jev-1.13.0"
+  ],
+  "mock": false,
+  "synthetic": false,
+  "n": 500,
+  "accuracy": 0.79,
+  "accuracy_ci95": [
+   0.754,
+   0.822
+  ],
+  "macro_f1": 0.7646576205347465,
+  "latency_ms": {
+   "p50": 372.13874934241176,
+   "p95": 462.52497555688024,
+   "p99": 634.254793250002
+  },
+  "cost_per_1000_usd": 0.042931896000000004,
+  "invalid_rate": 0.0,
+  "error_rate": 0.0,
+  "retried_calls": 0,
+  "workers": 4,
+  "ece": 0.09521999999999997,
+  "reliability": [
+   {
+    "lo": 0.2,
+    "hi": 0.3,
+    "n": 3,
+    "mean_confidence": 0.28,
+    "accuracy": 0.0
+   },
+   {
+    "lo": 0.3,
+    "hi": 0.4,
+    "n": 7,
+    "mean_confidence": 0.34714285714285714,
+    "accuracy": 0.0
+   },
+   {
+    "lo": 0.4,
+    "hi": 0.5,
+    "n": 17,
+    "mean_confidence": 0.45529411764705885,
+    "accuracy": 0.11764705882352941
+   },
+   {
+    "lo": 0.5,
+    "hi": 0.6,
+    "n": 22,
+    "mean_confidence": 0.5459090909090909,
+    "accuracy": 0.5
+   },
+   {
+    "lo": 0.6,
+    "hi": 0.7,
+    "n": 25,
+    "mean_confidence": 0.6344,
+    "accuracy": 0.4
+   },
+   {
+    "lo": 0.7,
+    "hi": 0.8,
+    "n": 35,
+    "mean_confidence": 0.7494285714285714,
+    "accuracy": 0.5428571428571428
+   },
+   {
+    "lo": 0.8,
+    "hi": 0.9,
+    "n": 53,
+    "mean_confidence": 0.8441509433962264,
+    "accuracy": 0.6792452830188679
+   },
+   {
+    "lo": 0.9,
+    "hi": 1.0,
+    "n": 338,
+    "mean_confidence": 0.9844970414201183,
+    "accuracy": 0.9378698224852071
+   }
+  ]
+ },
+ {
+  "task": "guardrail",
+  "backend": "chat-small",
+  "model_id": "claude-haiku-5-5",
+  "resolved_model_ids": [
+   "claude-haiku-5-5"
+  ],
+  "mock": false,
+  "synthetic": false,
+  "n": 500,
+  "accuracy": 0.79,
+  "accuracy_ci95": [
+   0.754,
+   0.826
+  ],
+  "macro_f1": 0.7900736051996556,
+  "latency_ms": {
+   "p50": 1037.4650000594556,
+   "p95": 1678.9990497054528,
+   "p99": 2105.187352593051
+  },
+  "cost_per_1000_usd": 0.0304284,
+  "invalid_rate": 0.004,
+  "error_rate": 0.0,
+  "retried_calls": 0,
+  "workers": 4,
+  "ece": 0.0992570281124498,
+  "reliability": [
+   {
+    "lo": 0.6,
+    "hi": 0.7,
+    "n": 14,
+    "mean_confidence": 0.6,
+    "accuracy": 0.5714285714285714
+   },
+   {
+    "lo": 0.7,
+    "hi": 0.8,
+    "n": 34,
+    "mean_confidence": 0.7020588235294117,
+    "accuracy": 0.6176470588235294
+   },
+   {
+    "lo": 0.8,
+    "hi": 0.9,
+    "n": 121,
+    "mean_confidence": 0.8260330578512397,
+    "accuracy": 0.7024793388429752
+   },
+   {
+    "lo": 0.9,
+    "hi": 1.0,
+    "n": 329,
+    "mean_confidence": 0.948966565349544,
+    "accuracy": 0.8541033434650456
+   }
+  ]
+ },
+ {
+  "task": "guardrail",
+  "backend": "jev",
+  "model_id": "jev-1.13.0",
+  "resolved_model_ids": [
+   "jev-1.13.0"
+  ],
+  "mock": false,
+  "synthetic": false,
+  "n": 500,
+  "accuracy": 0.818,
+  "accuracy_ci95": [
+   0.78,
+   0.852
+  ],
+  "macro_f1": 0.8165137614678899,
+  "latency_ms": {
+   "p50": 346.1656456347555,
+   "p95": 676.7966189887377,
+   "p99": 999.4017201662059
+  },
+  "cost_per_1000_usd": 0.014381472000000001,
+  "invalid_rate": 0.0,
+  "error_rate": 0.0,
+  "retried_calls": 0,
+  "workers": 4,
+  "ece": 0.056879999999999986,
+  "reliability": [
+   {
+    "lo": 0.5,
+    "hi": 0.6,
+    "n": 30,
+    "mean_confidence": 0.548,
+    "accuracy": 0.5
+   },
+   {
+    "lo": 0.6,
+    "hi": 0.7,
+    "n": 37,
+    "mean_confidence": 0.6397297297297296,
+    "accuracy": 0.6216216216216216
+   },
+   {
+    "lo": 0.7,
+    "hi": 0.8,
+    "n": 45,
+    "mean_confidence": 0.7502222222222221,
+    "accuracy": 0.5777777777777777
+   },
+   {
+    "lo": 0.8,
+    "hi": 0.9,
+    "n": 87,
+    "mean_confidence": 0.8522988505747127,
+    "accuracy": 0.7816091954022989
+   },
+   {
+    "lo": 0.9,
+    "hi": 1.0,
+    "n": 301,
+    "mean_confidence": 0.9615282392026578,
+    "accuracy": 0.920265780730897
+   }
+  ]
+ }
+]

@@ -1,0 +1,18 @@
+# USD per million tokens, list price, as published. Update `retrieved` when you re-check.
+# Mock backends use `price_per_mtok` from models.yaml instead.
+prices:
+  jev:
+    input_per_mtok: 0.042
+    output_per_mtok: 0.0
+    retrieved: 2026-10-22
+    source: Jev list price from the vendor's published documentation, retrieved 2026-10-22.
+  claude-haiku-5-5:
+    input_per_mtok: 0.10          # pricing page: prompts up to 100,000 tokens (ours are ~1k); above that $0.50 / $2.50
+    output_per_mtok: 0.50
+    retrieved: 2026-10-22
+    source: https://platform.claude.com/docs/en/about-claude/pricing
+  gpt-6-luna:
+    input_per_mtok: 0.10
+    output_per_mtok: 0.50
+    retrieved: 2026-10-22
+    source: https://developers.openai.com/api/docs/models

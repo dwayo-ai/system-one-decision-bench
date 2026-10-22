@@ -1,0 +1,52 @@
+# Pinned model versions. Change a pin deliberately: the cache is keyed by model id.
+# Ids verified 2026-10-22 against the providers' docs.
+backends:
+  jev:
+    kind: jev_http
+    model: jev-1.13.0            # what `jev-latest` pointed to on 2026-10-22
+    base_url: https://api.typesafe.ai
+    api_key_env: TYPESAFE_API_KEY
+    price_key: jev
+  jev-1.14:
+    kind: jev_http
+    model: jev-1.14.0            # newest release, available from 2026-10-14
+    base_url: https://api.typesafe.ai
+    api_key_env: TYPESAFE_API_KEY
+    price_key: jev
+  jev-litellm:                   # same model through a LiteLLM proxy pass-through
+    kind: jev_http
+    model: jev-1.13.0
+    base_url_env: LITELLM_PROXY_BASE_URL
+    base_url_suffix: /typesafe
+    api_key_env: LITELLM_API_KEY
+    price_key: jev
+  # Anthropic IDs and list prices read from the provider docs on 2026-10-22:
+  #   https://platform.claude.com/docs/en/about-claude/models/overview  (IDs)
+  #   https://platform.claude.com/docs/en/about-claude/pricing          (prices, see config/prices.yaml)
+  chat-small:
+    kind: chat
+    provider: anthropic
+    model: claude-haiku-5-5      # docs: "For high-volume, latency-sensitive tasks such as classification, extraction, and routing"
+    max_tokens: 128              # short classification answers (default was 1024)
+    thinking: disabled           # NOT Haiku 5.5's default (adaptive thinking on); with it on, thinking used up the 128 tokens
+    api_key_env: ANTHROPIC_API_KEY
+    price_key: claude-haiku-5-5
+  openai-small:
+    kind: chat
+    provider: openai
+    model: gpt-6-luna
+    api_key_env: OPENAI_API_KEY
+    price_key: gpt-6-luna
+  # Synthetic backends: no network, no key. Every result is flagged MOCK.
+  mock-jev:
+    kind: mock
+    seed: 1
+    accuracy: 0.85
+    latency_ms: 120
+    price_per_mtok: 0.042
+  mock-chat:
+    kind: mock
+    seed: 2
+    accuracy: 0.92
+    latency_ms: 900
+    price_per_mtok: 10.0

@@ -7,6 +7,8 @@ The question it answers: for a call that only needs a typed decision (route this
 how urgent is this), how do a decision model and a chat model compare on accuracy, calibration, latency and cost,
 and how much can a **confidence cascade** save by escalating only the uncertain calls?
 
+Write-up with the findings and what they mean for production pipelines: [Which of your LLM calls are really decisions?](https://dwayo.ai/blog/jev-system-one-decision-model-benchmark/)
+
 ## Status, stated plainly
 
 - Jev is a **hosted, early-access** model (text in, typed values and probabilities out). Results are a **snapshot on the run date**, not a lasting property of the model.
